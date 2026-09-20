@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>खुशदिल बैलून डेकोरेशन</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; width: 200px; }
+    </style>
+</head>
+<body>
+    <h1>प्रोडक्ट जोड़ें</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="text" id="itemName" placeholder="आइटम का नाम">
+    <button onclick="addItem()">ऐड करें</button>
+
+    <h2>हमारी कैटलॉग</h2>
+    <div id="catalog"></div>
+
+    <h2>आपका कार्ट</h2>
+    <div id="cart"></div>
+
+    <h2>पेमेंट का तरीका चुनें</h2>
+    <select id="paymentMethod">
+        <option value="cod">कैश ऑन डिलीवरी (ऑफलाइन)</option>
+        <option value="online">ऑनलाइन पेमेंट</option>
+    </select>
+    <br><br>
+    <button onclick="checkout()">ऑर्डर पूरा करें</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
